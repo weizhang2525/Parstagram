@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Parse
 
-class PostCell: UITableViewCell {
-
+class PostCell: UITableViewCell{
+    
+    @IBOutlet var photoView: UIImageView!
+    @IBOutlet var captionLabel: UILabel!
+    @IBOutlet var usernameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +24,8 @@ class PostCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+   
+    
 
 }
